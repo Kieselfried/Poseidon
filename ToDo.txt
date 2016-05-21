@@ -1,0 +1,14 @@
+Karten
++ farbige Karten
++ richtige (?) Kartendaten
++ Höhenlinien auf den Karten
++ 
+
+Schnitte
++ Bessere Farbskala für Salz- & Sauerstoffgehalt
++ Interpolation der Bodenwerte, Meeresbodenanzeige
++
+
+TS-Diagramme
++ TS-Diagramme
++
