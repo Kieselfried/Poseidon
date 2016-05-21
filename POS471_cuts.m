@@ -142,7 +142,7 @@ title(' Darstellung des Salzgehaltes')
 %% Als PDF Abspeichern
 
 filename = strcat ('POS471_gesamt.pdf');
-print(1,'-dpdf',filename)
+%print(1,'-dpdf',filename)
 
 
 %% ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -255,8 +255,8 @@ ylabel('Druck')
 title(' Darstellung des Salzgehaltes')
 
 %% Als PDF Abspeichern
-filename = strcat ('POS471_Station','_',num2str(Xs(Start(Station))),'_to_',num2str(Xs(End(Station))),'.pdf');
-print(Station+1,'-dpdf',filename)
+filename = strcat ('POS471_cut_',num2str(Xs(Start(Station))),'_to_',num2str(Xs(End(Station))),'.pdf');
+% print(Station+1,'-dpdf',filename)
 end
 
 
