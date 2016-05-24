@@ -10,5 +10,4 @@ Schnitte
 +
 
 TS-Diagramme
-+ TS-Diagramme
 +
