@@ -38,7 +38,7 @@ drucken=0;
 % text(X(2),Y(2),num2str(ctd_station(stationen(2))),'vertical','bottom','horizontal','right');
 % 
 % % Notable Cities
-% cities={' TÃ²rshavn',' ReykjavÃ­k'};
+% cities={' Tòrshavn',' Reykjavík'};
 % lons=[ -6.781479  -21.831501];
 % lats=[  62.009060 64.132114];
 % [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
@@ -113,7 +113,7 @@ for i=1:length(stationen)
 end
 
 % Notable Cities
-cities={' TÃ²rshavn',' ReykjavÃ­k'};
+cities={' Tòrshavn',' Reykjavík'};
 lons=[ -6.781479  -21.831501];
 lats=[  62.009060 64.132114];
 [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
@@ -177,7 +177,7 @@ end
 % text(X(2),Y(2),num2str(ctd_station(stationen(2))),'vertical','top','horizontal','left');
 % 
 % % Notable Cities
-% cities={' TÃ²rshavn',' ReykjavÃ­k'};
+% cities={' Tòrshavn',' Reykjavík'};
 % lons=[ -6.781479  -21.831501];
 % lats=[  62.009060 64.132114];
 % [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
@@ -195,4 +195,3 @@ if drucken==1
     filename = strcat ('POS294_FBC.png');
     print(3,'-dpng',filename)
 end
-
