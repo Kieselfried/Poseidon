@@ -8,47 +8,47 @@ ctd_lon=-ctd_lon;
 
 drucken=0;
 
-% %% ISL-GRE (678-710)
-% 
-% figure(1)
-% % Karte initialisieren
-% m_proj('miller','long',[-33.5 -19.5],'lat',[63.5 69.5]);
-% % m_proj('miller','long',[min(ctd_lon) max(ctd_lon)],'lat',[min(ctd_lat) max(ctd_lat)]);
-% % Bathymetrie High Resolution Textur
-% m_etopo2('contourf',(-5000:100:0));
-% % Coastline High Resolution Textur
-% m_gshhs_f('patch',[.5 .5 .5]);
-% % Grid einfuegen und Axen anpassen
-% m_grid('xtick',6,'yaxislocation','right')
-% 
-% % Colorbar
-% c = colorbar('southoutside');
-% c.Label.String = 'Depth [m]';
-% 
-% % Titel
-% title('Poseidon Cruise 294: Denmark Strait');
-% 
-% % Stations-Beschriftung
-% stationen=(1:33);
-% [X,Y]=m_ll2xy(ctd_lon(stationen),ctd_lat(stationen),'clip',('off'));
-% line(X,Y,'marker','square','markersize',4,'color','r','linestyle','-','linewidth',2);
-% stationen=([1 33]);
-% [X,Y]=m_ll2xy(ctd_lon(stationen),ctd_lat(stationen),'clip',('off'));
-% text(X(1),Y(1),num2str(ctd_station(stationen(1))),'vertical','top','horizontal','left');
-% text(X(2),Y(2),num2str(ctd_station(stationen(2))),'vertical','bottom','horizontal','right');
-% 
-% % Notable Cities
-% cities={' Tòrshavn',' Reykjavík'};
-% lons=[ -6.781479  -21.831501];
-% lats=[  62.009060 64.132114];
-% [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
-% line(X(1),Y(1),'marker','o','color','r','linewidth',2)
-% text(X(1),Y(1),cities(1),'color','r','linewidth',2,'horizontal','left')
-% line(X(2),Y(2),'marker','o','color','r','linewidth',2)
-% text(X(2),Y(2),cities(2),'color','r','linewidth',2,'horizontal','left')
+%% Denmark Strait (678-710)
+
+figure(1)
+% Karte initialisieren
+m_proj('miller','long',[-33.5 -19.5],'lat',[63.5 69.5]);
+% m_proj('miller','long',[min(ctd_lon) max(ctd_lon)],'lat',[min(ctd_lat) max(ctd_lat)]);
+% Bathymetrie High Resolution Textur
+m_etopo2('contourf',(-5000:100:0));
+% Coastline High Resolution Textur
+m_gshhs_f('patch',[.5 .5 .5]);
+% Grid einfuegen und Axen anpassen
+m_grid('xtick',6,'yaxislocation','right')
+
+% Colorbar
+c = colorbar('southoutside');
+c.Label.String = 'Depth [m]';
+
+% Titel
+title('Poseidon Cruise 294: Denmark Strait');
+
+% Stations-Beschriftung
+stationen=(1:33);
+[X,Y]=m_ll2xy(ctd_lon(stationen),ctd_lat(stationen),'clip',('off'));
+line(X,Y,'marker','square','markersize',4,'color','r','linestyle','-','linewidth',2);
+stationen=([1 33]);
+[X,Y]=m_ll2xy(ctd_lon(stationen),ctd_lat(stationen),'clip',('off'));
+text(X(1),Y(1),num2str(ctd_station(stationen(1))),'vertical','top','horizontal','left');
+text(X(2),Y(2),num2str(ctd_station(stationen(2))),'vertical','bottom','horizontal','right');
+
+% Notable Cities
+cities={' TÃ²rshavn',' ReykjavÃ­k'};
+lons=[ -6.781479  -21.831501];
+lats=[  62.009060 64.132114];
+[X,Y]=m_ll2xy(lons,lats,'clip',('off'));
+line(X(1),Y(1),'marker','o','color','r','linewidth',2)
+text(X(1),Y(1),cities(1),'color','r','linewidth',2,'horizontal','left')
+line(X(2),Y(2),'marker','o','color','r','linewidth',2)
+text(X(2),Y(2),cities(2),'color','r','linewidth',2,'horizontal','left')
     
     
-%% ISL-FAE (711-752; 766-790; 816-831)
+%% Island-Faroe Ridge (711-752; 766-790; 816-831)
 figure(2)
 % Karte initialisieren
 % m_proj('miller','long',[min(ctd_lon) max(ctd_lon)],'lat',[min(ctd_lat) max(ctd_lat)]);
@@ -113,7 +113,7 @@ for i=1:length(stationen)
 end
 
 % Notable Cities
-cities={' Tòrshavn',' Reykjavík'};
+cities={' TÃ²rshavn',' ReykjavÃ­k'};
 lons=[ -6.781479  -21.831501];
 lats=[  62.009060 64.132114];
 [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
@@ -122,7 +122,7 @@ text(X(1),Y(1),cities(1),'color','r','linewidth',2,'horizontal','left')
 line(X(2),Y(2),'marker','o','color','r','linewidth',2)
 text(X(2),Y(2),cities(2),'color','r','linewidth',2,'horizontal','left')
 
-%% FBC (753-764; 843-849; 892-902)
+%% Faroe Bank Channel (753-764; 843-849; 892-902)
 figure(3)
 % Karte initialisieren
 % m_proj('miller','long',[min(ctd_lon) max(ctd_lon)],'lat',[min(ctd_lat) max(ctd_lat)]);
@@ -177,7 +177,7 @@ end
 % text(X(2),Y(2),num2str(ctd_station(stationen(2))),'vertical','top','horizontal','left');
 % 
 % % Notable Cities
-% cities={' Tòrshavn',' Reykjavík'};
+% cities={' TÃ²rshavn',' ReykjavÃ­k'};
 % lons=[ -6.781479  -21.831501];
 % lats=[  62.009060 64.132114];
 % [X,Y]=m_ll2xy(lons,lats,'clip',('off'));
